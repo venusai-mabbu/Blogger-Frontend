@@ -15,7 +15,7 @@ function UserPosts() {
                 if(id){
 
                 
-                    const response = await fetch(`http://localhost:5000/user/${id}`);
+                    const response = await fetch(`https://blogger-backend-iota.vercel.app/user/${id}`);
                     if (!response.ok) {
                         throw new Error('Failed to fetch posts');
                     }

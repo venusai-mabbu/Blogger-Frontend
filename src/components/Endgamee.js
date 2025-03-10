@@ -31,7 +31,7 @@ function Endgame() {
             console.log("hiii")
             console.log(`${head} ----------${subhead}`)
             try {
-                const response = await fetch(`http://localhost:5000/category/${head}/${subhead}`);
+                const response = await fetch(`https://blogger-backend-iota.vercel.app/category/${head}/${subhead}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch posts');
                 }
@@ -103,7 +103,7 @@ function Endgame() {
         handleCloseNavMenuSort();
         setSelectedSec(sec);
         try {
-            const response = await fetch(`http://localhost:5000/category/${head}/${subhead}/sortby/${sec}`);
+            const response = await fetch(`https://blogger-backend-iota.vercel.app/category/${head}/${subhead}/sortby/${sec}`);
             if (!response.ok) {
                 throw new Error('Failed to fetch posts');
             }

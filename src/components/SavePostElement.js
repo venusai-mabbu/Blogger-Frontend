@@ -22,7 +22,7 @@ function SavePostElement({ post }) {
   const unsavePost = async () => {
     // console.log(id);
     try {
-      const response = await fetch(`http://localhost:5000/unsavepost/${post._id}`, {
+      const response = await fetch(`https://blogger-backend-iota.vercel.app/unsavepost/${post._id}`, {
         method: 'PUT',
         body: JSON.stringify({ id, username: userInfo?.username }),
         headers: { 'Content-Type': 'application/json' },

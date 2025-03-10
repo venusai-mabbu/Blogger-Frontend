@@ -69,7 +69,7 @@ function PostisAvailable({ a, b }) {
   useEffect(() => {
       const fetchPostStatus = async () => {
           try {
-              const response = await fetch(`http://localhost:5000/checkpost/${id}/`);
+              const response = await fetch(`https://blogger-backend-iota.vercel.app/checkpost/${id}/`);
               const data = await response.json();
               console.log(data);
               setPostStatus(data.message === "Post found");

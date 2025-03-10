@@ -27,7 +27,7 @@ export default function SignupPage() {
     emailErrorEle.textContent = '';
     passwordErrorEle.textContent = '';
     try {
-      const response = await fetch('http://localhost:5000/signup', {
+      const response = await fetch('https://blogger-backend-iota.vercel.app/signup', {
         method: 'POST',
         body: JSON.stringify({ username, email, password }),
         headers: { 'Content-Type': 'application/json' },
@@ -60,7 +60,7 @@ export default function SignupPage() {
   async function sendOtp(email) {
     emailErrorEle.textContent = "";
     try {
-      const response = await fetch('http://localhost:5000/getotp', {
+      const response = await fetch('https://blogger-backend-iota.vercel.app/getotp', {
         method: 'POST',
         body: JSON.stringify({ email }),
         headers: { 'Content-Type': 'application/json' },
@@ -82,7 +82,7 @@ export default function SignupPage() {
 
   async function verifyOtp(otp) {
     try {
-      const response = await fetch('http://localhost:5000/verifyotp', {
+      const response = await fetch('https://blogger-backend-iota.vercel.app/verifyotp', {
         method: 'POST',
         body: JSON.stringify({ otp }),
         headers: { 'Content-Type': 'application/json' },

@@ -39,7 +39,7 @@ function PostModal() {
         e.preventDefault();
         setTitleError('');
         setDescriptionError('');
-        const response = await fetch('http://localhost:5000/post', {
+        const response = await fetch('https://blogger-backend-iota.vercel.app/post', {
             method: 'POST',
             body: JSON.stringify({ title, description, upvote: 0, downvote: 0, likes: 0, category: head, subcategory: subhead, section }),
             headers: { 'Content-Type': 'application/json' },
