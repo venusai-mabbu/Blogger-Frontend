@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Animation</title>
+<style>
+    @keyframes changeText {
+        0% { content: "Blogger"; }
+        55% { content: "Bl"; }
+        65% { content: "o"; }
+        70% { content: "g"; }
+        75% { content: "g"; }
+        80% { content: "er"; }
+        
+    }
+
+    .animated-text::after {
+        content: "Guide ";
+        display: inline-block;
+        animation: changeText 5s linear infinite;
+    }
+    .text{
+        font-size: 28px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>
+</head>
+<body>
+
+<p class="text"><span class="animated-text"></span> <br><span style="margin-left: 28px;"> Connect</span></p>
+
+</body>
+</html>
