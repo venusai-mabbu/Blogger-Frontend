@@ -7,7 +7,7 @@ export function UserContextProvider({ children }) {
     const [isLoading, setIsLoading] = useState(true); // Add loading state
     
     useEffect(() => {
-        fetch('http://localhost:5000/profile', {
+        fetch('https://blogger-backend-iota.vercel.app/', {
             credentials: 'include',
         })
         .then(res => {
