@@ -15,7 +15,7 @@ function HomePage() {
             </div>
           </div>
           <p id='description'>Feeling lost, confused, or uncertain? <br />Don't worry, we've gotcha. Stop running circles;<br /> dive right in. Let the community guide you through. <br />Explore curated categories, uncover valuable insights and let it all effortlessly. </p>
-          <Button id='exploreBtn' href='/category' variant="contained" size='large'>Exploreeee</Button>
+          <Button id='exploreBtn' href='/category' variant="contained" size='large'>Explore</Button>
         </div>
       </div>
     
